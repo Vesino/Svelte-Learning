@@ -3,6 +3,7 @@
 	import About from './components/About.svelte'
 	import Counter from './components/Counter.svelte'
 	import Person from './components/Person.svelte'
+	import Skills from './components/Skills.svelte'
 
 	// Variables
 	export let name;
@@ -14,14 +15,6 @@
 		age: 27
 	}
 </script>
-
-<main>
-	<h1>{name} {lastName}!</h1>
-	<About />
-	<Counter />
-	<Person { ...data }/>
-	<img src={svelteLogo} alt="Svelte logo">
-</main>
 
 <style>
 	:global(body){
@@ -62,3 +55,12 @@
 		}
 	}
 </style>
+
+<main>
+	<h1>{name} {lastName}!</h1>
+	<About />
+	<Counter />
+	<Person { ...data }/>
+	<Skills />
+	<img src={svelteLogo} alt="Svelte logo">
+</main>
